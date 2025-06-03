@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roofing Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/roofingpro.css">
+</head>
+<body>
+  <header class="main-header" id="mainHeader">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="logo.png" alt="Roofing Pro Logo"></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="#" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#quote" onclick="toggleMenu()">Get a Quote</a></li>
+          <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="quote">
+    <img class="bg-img" src="https://www.marley.co.uk/-/media/images/case-studies/duo-edgemere/cala-homes/cala-homes-oldfold-village-7-sm-grmin.ashx?rev=f04c5b9ac0304073bbd8870c146c3876" alt="Roofing Background">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>ONE OF MANCHESTER'S<br>LEADING ROOFING<br>SPECIALISTS</h1>
+      <div class="hero-line"></div>
+      <p>
+        With over 15 years of experience, our expert team provides free quotes and inspections,
+        ensuring high-quality service for all your roofing needs.
+      </p>
+
+      <form class="quote-form" action="https://formspree.io/f/mgvkjrgw" method="POST">
+        <h2>GET A FREE QUOTE</h2>
+        <div class="underline"></div>
+        <div class="input-group">
+          <input type="text" name="First Name" placeholder="First Name" required>
+          <input type="text" name="Last Name" placeholder="Last Name" required>
+        </div>
+        <input type="text" name="Phone Number" placeholder="Phone Number" required>
+        <input type="text" name="Address" placeholder="Your Address" required>
+        <textarea name="Project Description" placeholder="Describe Your Project" required></textarea>
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="roof-divider">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <polygon points="0,80 600,0 1200,80" style="fill: white;"></polygon>
+      </svg>
+    </div>
+  </section>
+
+  <section class="testimonials-section" id="testimonials">
+    <h2>OUR TESTIMONIALS</h2>
+    <p>WE WILL LET OUR REVIEWS DO THE TALKING!</p>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>Our roof was damaged after a storm, so we called James. They came over straight away, gave us a fair quote, and got the repair done quickly. They also showed us photos of the damage and the work they did. Very happy with the service and the price.</p>
+            <div class="author">Jayney</div>
+            <div class="meta">(3 months ago) Google</div>
+            <div class="quote-icon">❞</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>Absolutely professional and very courteous team. They completed the work ahead of schedule and left everything clean. Highly recommend their services.</p>
+            <div class="author">Michael R.</div>
+            <div class="meta">(1 month ago) Google</div>
+            <div class="quote-icon">❞</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>I was impressed with how responsive and friendly the staff were. Great job with fixing my roof leak, and they provided before-and-after pictures. Very professional.</p>
+            <div class="author">Samantha K.</div>
+            <div class="meta">(2 weeks ago) Google</div>
+            <div class="quote-icon">❞</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="roofingpro.js"></script>
+</body>
+</html>
