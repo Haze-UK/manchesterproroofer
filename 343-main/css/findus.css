@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(3, 3, 3);
+}
+
+.map-section {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  background: url('') no-repeat center center/cover;
+  overflow: hidden;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.map-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.quote-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background-color: #d90000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.quote-btn:hover {
+  background-color: #b80000;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

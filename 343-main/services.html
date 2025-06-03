@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services – Roofing Pro Manchester</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #d90000;
+      --secondary-color: #b80000;
+      --font-heading: 700;
+      --font-body: 400;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-weight: var(--font-heading);
+      font-size: 2rem;
+      margin-top: 160px;
+      margin-bottom: 10px;
+    }
+
+    .section-divider {
+      width: 80px;
+      height: 3px;
+      background: #000;
+      margin: 0 auto 30px;
+    }
+
+    p.subheading {
+      text-align: center;
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0 20px 80px;
+    }
+
+    .service-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      height: 500px;
+      display: flex;
+      align-items: flex-end;
+      color: white;
+      text-align: center;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 1;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .service-content {
+      position: relative;
+      z-index: 2;
+      padding: 30px 20px 40px;
+      width: 100%;
+    }
+
+    .service-content h3 {
+      font-size: 1.5rem;
+      font-weight: var(--font-heading);
+      margin-bottom: 10px;
+    }
+
+    .service-content p {
+      font-weight: var(--font-body);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .service-content .read-more {
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: var(--font-heading);
+      border-radius: 6px;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .service-content .read-more:hover {
+      background: var(--secondary-color);
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header" style="position: fixed; top: 0; width: 100%; background: white; padding: 10px 20px; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto;">
+      <a href="index.html">
+        <img src="logo.png" alt="Roofing Pro Manchester Logo" style="height: 80px;">
+      </a>
+      <nav>
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; font-weight: 600;">Home</a>
+        <a href="services.html" style="margin: 0 15px; text-decoration: none; font-weight: 600; color: var(--primary-color);">Services</a>
+        <a href="#testimonials" style="margin: 0 15px; text-decoration: none; font-weight: 600;">Testimonials</a>
+        <a href="#map" style="margin: 0 15px; text-decoration: none; font-weight: 600;">Find Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SERVICES SECTION -->
+  <section>
+    <h2 class="section-title">OUR SERVICES</h2>
+    <div class="section-divider"></div>
+    <p class="subheading">MANCHESTER'S TRUSTED ROOFING COMPANY</p>
+    <div class="services-grid">
+      <!-- CARD 1 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px.png" alt="New Roofs">
+        <div class="service-content">
+          <h3>NEW ROOFS</h3>
+          <p>Expert installations using high-quality materials for durability and style. Get a free quote today!</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-1.png" alt="Roof Repairs">
+        <div class="service-content">
+          <h3>ROOF REPAIRS</h3>
+          <p>We assess, repair, and restore roofing problems like leaks and damage with long-lasting solutions.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-2.png" alt="Flat Roofing">
+        <div class="service-content">
+          <h3>FLAT ROOFING</h3>
+          <p>Reliable flat roof systems using EPDM, felt, and GRP. Durable, watertight, and visually clean.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-3.png" alt="Fascia & Soffit">
+        <div class="service-content">
+          <h3>FASCIA & SOFFIT</h3>
+          <p>Durable, low-maintenance PVC options to protect your roofline and improve airflow and appearance.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-4.png" alt="Chimney Repairs">
+        <div class="service-content">
+          <h3>CHIMNEY REPAIRS & BUILDS</h3>
+          <p>Full service for chimney leaks, repointing, and rebuilds. Keep your chimney safe and secure.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-5.png" alt="Guttering">
+        <div class="service-content">
+          <h3>GUTTERING</h3>
+          <p>Installation, repairs, and cleaning to prevent overflow and water damage to your home.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-7.png" alt="Roof Drone Survey">
+        <div class="service-content">
+          <h3>ROOF DRONE SURVEY</h3>
+          <p>Get a detailed roof inspection using high-resolution drone imagery — safe, fast, and cost-efficient.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="service-card">
+        <img src="https://roofingpromanchester.co.uk/wp-content/uploads/2025/01/About-is-Mobile-470-x-600-px-6.png" alt="Roof Cleaning">
+        <div class="service-content">
+          <h3>ROOF CLEANING</h3>
+          <p>Safely remove moss, dirt, and stains to maintain both roof appearance and long-term performance.</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #111; color: white; padding: 40px 20px;">
+    <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+      <div>
+        <img src="logo.png" alt="Roofing Pro Manchester" style="width: 180px; margin-bottom: 15px;">
+        <p>Roofing Pro Manchester is a family-run business providing trusted roofing solutions throughout Greater Manchester and Cheshire.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li>New Roofs</li>
+          <li>Roof Repairs</li>
+          <li>Flat Roofing</li>
+          <li>Guttering</li>
+          <li>Fascia & Soffit</li>
+          <li>Chimney Repairs</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li>07414 776 564</li>
+          <li>0161 388 5736</li>
+          <li><a href="mailto:contact@roofingpromanchester.co.uk" style="color: white;">contact@roofingpromanchester.co.uk</a></li>
+          <li>Peel House, 30 The Downs,<br>Altrincham, WA14 2PX</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
